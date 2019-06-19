@@ -34,6 +34,13 @@ public class SpringInit extends AbstractAnnotationConfigDispatcherServletInitial
 		return new Filter[] {new CharacterEncodingFilter("UTF-8",true)};
 	}
 	
-	
+	/*
+	 * @Override protected FrameworkServlet
+	 * createDispatcherServlet(WebApplicationContext servletAppContext) { //부모가 만든
+	 * 것을 일부 설정을 수정해서 다시 보내준다 DispatcherServlet dispatcherServlet =
+	 * (DispatcherServlet)super.createDispatcherServlet(servletAppContext);
+	 * dispatcherServlet.setThrowExceptionIfNoHandlerFound(true); return
+	 * dispatcherServlet; }
+	 */
 
 }

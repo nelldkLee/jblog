@@ -25,7 +25,7 @@ public class DBConfig {
 	public DataSource basicDataSource() {
 		BasicDataSource basicDataSource = new BasicDataSource();
 		
-		basicDataSource.setDriverClassName(env.getProperty("jdbc.diriverClassName"));
+		basicDataSource.setDriverClassName(env.getProperty("jdbc.driverClassName"));
 		basicDataSource.setUrl(env.getProperty("jdbc.url"));
 		basicDataSource.setUsername(env.getProperty("jdbc.username"));
 		basicDataSource.setPassword(env.getProperty("jdbc.password"));
